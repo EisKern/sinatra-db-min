@@ -80,7 +80,7 @@ pickle-email-*.html
 **.swp
 
 
-#
+# bundle state
 /sample1/.bundle
 /sample1/vendor
 /sample1/Gemfile.lock
