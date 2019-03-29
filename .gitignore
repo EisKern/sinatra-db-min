@@ -78,3 +78,9 @@ pickle-email-*.html
 
 # vim artifacts
 **.swp
+
+
+#
+/sample1/.bundle
+/sample1/vendor
+/sample1/Gemfile.lock
