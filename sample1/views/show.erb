@@ -1,0 +1,5 @@
+<ul>
+    <% @comments.each do |c| %>
+        <li><%= c.id %>: <%= c.name %>: <%= c.comment %></li>
+    <% end %>
+</ul>
