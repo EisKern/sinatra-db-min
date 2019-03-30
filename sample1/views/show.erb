@@ -1,5 +1,5 @@
 <ul>
-    <% @comments.each do |c| %>
-        <li><%= c.id %>: <%= c.name %>: <%= c.comment %></li>
+    <% @messages.each do |message| %>
+        <li><%= message.name %>: <%= message.comment %></li>
     <% end %>
 </ul>

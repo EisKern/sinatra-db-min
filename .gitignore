@@ -84,3 +84,7 @@ pickle-email-*.html
 /sample1/.bundle
 /sample1/vendor
 /sample1/Gemfile.lock
+
+/sample2/.bundle
+/sample2/vendor
+/sample2/Gemfile.lock

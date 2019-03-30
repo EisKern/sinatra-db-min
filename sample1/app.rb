@@ -1,20 +1,19 @@
 require 'bundler'
 Bundler.require
 
-require 'sinatra/reloader'
+ActiveRecord::Base.establish_connection(
+    adapter: 'sqlite3',
+    database: './db/messages.db'
+)
 
-
-config = YAML.load_file('db/database.yml')
-ActiveRecord::Base.establish_connection(config['development'])
-
-class Comment < ActiveRecord::Base
+class Message < ActiveRecord::Base
 end
 
 get '/' do
-    "Hello! #{ Comment.count } Comments."
+    "Number of Messages: #{Message.count}"
 end
 
 get '/show' do
-    @comments = Comment.all
+    @messages = Message.all
     erb :show
 end

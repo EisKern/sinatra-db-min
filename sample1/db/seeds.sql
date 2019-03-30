@@ -1,10 +1,9 @@
-drop table if exists comments;
+drop table if exists messages;
 
-create table comments(
-    id integer primary key,
+create table messages(
     name text,
     comment text
 );
 
-insert into comments values (1, 'aaa', 'Hello');
-insert into comments values (2, 'bbb', 'Hello World');
+insert into messages values ('aaa', 'Hello');
+insert into messages(name, comment) values ('bbb', 'Hello World');
